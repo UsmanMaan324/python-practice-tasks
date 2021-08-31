@@ -1,0 +1,12 @@
+{% extends 'mainPage/base/base.html'%}
+{% load static %}
+{% block title%}{{user.name}}{% endblock %}
+
+
+{% block heading%}
+    {{user.name}}
+{% endblock%}
+
+{% block body%}
+    <a href="javascript:history.back()">back</a>
+{% endblock %}

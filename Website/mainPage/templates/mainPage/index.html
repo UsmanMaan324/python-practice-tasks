@@ -1,0 +1,19 @@
+{% extends 'mainPage/base/base.html'%}
+{% load static %}
+{% block title%}Home{% endblock %}
+{% block site_css%}
+    <link rel="stylesheet" href="{% static 'mainPage/styles/index.css' %}">
+{% endblock %}
+
+{% block heading%}
+    Home
+{% endblock%}
+{% block body%}
+    {% if flag %}
+        {% for user in users %}
+            <a href="{% url 'user_detail' user.slug %}">{{ user.name }}</a>
+        {% endfor %}
+    {% else %}
+        <h2>No Name</h2>
+{% endif %}
+{% endblock %}
