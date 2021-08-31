@@ -3,6 +3,9 @@ Python practice questions solved by Usman Ali
 
 Here we will solve the some less complex problem in python
 
+# Django #
+Please go to master branch for Django project!
+
 ## Task 1 ##
 Compute the sum of two provided numbers
 
